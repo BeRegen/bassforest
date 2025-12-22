@@ -72,6 +72,20 @@
 
   <body class="bg-forest-950 text-white antialiased overflow-x-hidden">
 
+    <form
+    name="contact"
+    method="POST"
+    data-netlify="true"
+    netlify-honeypot="bot-field"
+    hidden
+  >
+    <input type="hidden" name="form-name" value="contact" />
+    <input type="text" name="name" />
+    <input type="email" name="email" />
+    <textarea name="message"></textarea>
+  </form>
+  
+
     <div id="root"></div>
 
     <!-- ✅ Netlify Forms static detection (REQUIRED) -->
