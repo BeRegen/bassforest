@@ -9,7 +9,6 @@ const Countdown: React.FC = () => {
   });
 
   useEffect(() => {
-    // Target Date: April 22, 2026
     const targetDate = new Date('2026-04-22T00:00:00').getTime();
 
     const interval = setInterval(() => {
@@ -33,13 +32,49 @@ const Countdown: React.FC = () => {
   }, []);
 
   const TimeUnit: React.FC<{ value: number; label: string }> = ({ value, label }) => (
-    <div className="flex flex-col items-center mx-2 md:mx-4">
-      <div className="bg-forest-950/80 backdrop-blur-md border border-neon-green/50 rounded-lg p-3 md:p-6 min-w-[70px] md:min-w-[100px] flex items-center justify-center shadow-[0_0_20px_rgba(57,255,20,0.15)] ring-1 ring-white/5">
-        <span className="text-2xl md:text-5xl font-display font-black text-white tabular-nums drop-shadow-[0_2px_10px_rgba(255,255,255,0.2)]">
+    <div className="flex flex-col items-center mx-3 md:mx-5">
+
+      {/* NUMBER CARD — sharp, no blur */}
+      <div
+        className="
+          bg-forest-950
+          border border-neon-green/40
+          rounded-xl
+          p-4 md:p-6
+          min-w-[80px] md:min-w-[110px]
+          flex items-center justify-center
+          shadow-[0_0_12px_rgba(57,255,20,0.18)]
+        "
+      >
+        <span
+          className="
+            text-3xl md:text-5xl
+            font-display font-black
+            text-white
+            tabular-nums
+            tracking-wide
+          "
+        >
           {value.toString().padStart(2, '0')}
         </span>
       </div>
-      <span className="text-forest-300 font-bold text-[10px] md:text-xs mt-3 uppercase tracking-[0.3em] drop-shadow-md">
+
+      {/* LABEL — high contrast, no blur */}
+      <span
+        className="
+          mt-4
+          px-3
+          py-1
+          rounded-full
+          text-xs
+          font-semibold
+          uppercase
+          tracking-[0.12em]
+          text-white
+          bg-forest-900
+          border border-white/20
+        "
+      >
         {label}
       </span>
     </div>
