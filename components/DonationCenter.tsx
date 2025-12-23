@@ -82,20 +82,30 @@ const DonationCenter: React.FC = () => {
     rounded-xl
     border border-white/5
     overflow-hidden
-    min-h-[110px]
-    sm:min-h-[130px]
-    md:min-h-[150px]
-    lg:min-h-[120px]
     flex items-center
+    h-[120px]        /* MOBILE: só a barra */
+    sm:h-[90px]
+    md:h-[150px]    /* DESKTOP: widget completo */
   "
 >
   <iframe
     src="https://www.gofundme.com/f/bass-forest-plant-1-billion-trees-on-june-5th-2026/stream-goal-bar?locale=en-US"
-    className="w-full h-full border-none"
     title="GoFundMe Stream Goal Bar"
     scrolling="no"
+    className="
+      w-full
+      h-[150px]
+      border-none
+
+      /* MOBILE: corta o topo (título) */
+      translate-y-[-15px]
+
+      /* DESKTOP: sem corte */
+      md:translate-y-0
+    "
   />
 </div>
+
 
           </div>
 
