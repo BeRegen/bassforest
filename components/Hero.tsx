@@ -45,7 +45,7 @@ const Hero: React.FC = () => {
             The first edition of an annual global electronic music festival amplifying World Environment Day through music, community and real-world tree planting.
           </p>
           <p className="text-base md:text-lg text-forest-400 leading-relaxed font-medium">
-            Bass Forest brings together electronic artists and listeners worldwide to support a coordinated global tree planting action on June 5, 2026, aligned with the Monthly Earth Day ecosystem.
+          Bass Forest brings together electronic artists and listeners worldwide to support a coordinated global tree planting action on June 5, 2026, as part of the largest tree planting day in environmental history, aligned with the Monthly Earth Day ecosystem.
           </p>
         </div>
 

@@ -75,13 +75,28 @@ const DonationCenter: React.FC = () => {
               <Trees size={16} /> Live Planting Goal
             </h4>
 
-            <div className="w-full aspect-[4/1] bg-forest-950 rounded-xl overflow-hidden border border-white/5">
-              <iframe
-                src="https://www.gofundme.com/f/bass-forest-plant-1-billion-trees-on-june-5th-2026/stream-goal-bar?locale=en-US"
-                className="w-full h-full border-none"
-                title="GoFundMe Stream Goal Bar"
-              ></iframe>
-            </div>
+            <div
+  className="
+    w-full
+    bg-forest-950
+    rounded-xl
+    border border-white/5
+    overflow-hidden
+    min-h-[110px]
+    sm:min-h-[130px]
+    md:min-h-[150px]
+    lg:min-h-[120px]
+    flex items-center
+  "
+>
+  <iframe
+    src="https://www.gofundme.com/f/bass-forest-plant-1-billion-trees-on-june-5th-2026/stream-goal-bar?locale=en-US"
+    className="w-full h-full border-none"
+    title="GoFundMe Stream Goal Bar"
+    scrolling="no"
+  />
+</div>
+
           </div>
 
           {/* QR + TEXT */}
