@@ -2,6 +2,19 @@ import React from 'react';
 import { Globe, Mail } from 'lucide-react';
 
 const Sponsors: React.FC = () => {
+  const partners = [
+    { 
+      name: 'Treegens', 
+      image: 'https://res.cloudinary.com/dr0weongo/image/upload/v1769091259/treegens_zrifvj.jpg', 
+      social: 'https://x.com/thetreegens' 
+    },
+    { 
+      name: 'Silvi Protocol', 
+      image: 'https://res.cloudinary.com/dr0weongo/image/upload/v1769091259/silvi_larcxb.jpg', 
+      social: 'https://x.com/SilviProtocol' 
+    },
+  ];
+
   const categories = [
     "Reforestation & Impact Organizations",
     "Media & Streaming",
@@ -17,7 +30,25 @@ const Sponsors: React.FC = () => {
           <div className="w-16 h-1 bg-forest-800 mx-auto rounded-full"></div>
         </div>
 
-        {/* Sponsor Bubbles */}
+        {/* Partner Bubbles */}
+        <div className="flex flex-wrap justify-center gap-8 md:gap-16 mb-16">
+          {partners.map((partner, index) => (
+            <a
+              key={index}
+              href={partner.social}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex flex-col items-center group max-w-[150px] text-center cursor-pointer"
+            >
+              <div className="w-20 h-20 md:w-28 md:h-28 rounded-full bg-forest-900 border border-white/5 flex items-center justify-center mb-4 transition-all duration-300 group-hover:bg-forest-800 group-hover:scale-105 overflow-hidden">
+                <img src={partner.image} alt={partner.name} className="w-full h-full object-cover rounded-full" />
+              </div>
+              <span className="text-xs uppercase tracking-[0.2em] text-gray-500 font-bold leading-tight">{partner.name}</span>
+            </a>
+          ))}
+        </div>
+
+        {/* Category Bubbles */}
         <div className="flex flex-wrap justify-center gap-8 md:gap-16 opacity-50 grayscale">
           {categories.map((label, index) => (
             <div key={index} className="flex flex-col items-center group max-w-[150px] text-center">
