@@ -8,6 +8,8 @@ const Lineup: React.FC = () => {
     { name: 'Duke Silver', image: 'https://res.cloudinary.com/dr0weongo/image/upload/v1768913732/duke_ksxguf.jpg', social: 'https://soundcloud.com/thisisdukesilver?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing' },
     { name: 'Miss Jaedha', image: 'https://res.cloudinary.com/dr0weongo/image/upload/v1768913732/miss_icxbgj.jpg', social: 'https://soundcloud.com/missjaedha' },
     { name: 'Bezz Bunny', image: 'https://res.cloudinary.com/dr0weongo/image/upload/v1769264466/bezzbunny_ltxluj.jpg', social: 'https://soundcloud.com/bezzbunny' },
+    { name: 'TwoScoops', image: 'https://res.cloudinary.com/dr0weongo/image/upload/v1769303774/IMG-20260124-WA0000_oezqvk.jpg', social: 'https://soundcloud.com/dj-twoscoops' },
+    { name: 'DJ Jimeni', image: 'https://res.cloudinary.com/dr0weongo/image/upload/v1769303738/IMG-20260124-WA0001_dcw7v4.jpg', social: 'https://soundcloud.com/jimeni' },
   ];
   return (
     <section id={SectionId.LINEUP} className="py-24 bg-gradient-to-b from-forest-950 to-forest-900 relative">
