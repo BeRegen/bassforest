@@ -3,13 +3,23 @@ import { SectionId } from '../types';
 
 const Lineup: React.FC = () => {
   const artists = [
+    
+    { 
+      name: 'Duke Silver', 
+      image: 'https://res.cloudinary.com/dr0weongo/image/upload/v1768913732/duke_ksxguf.jpg', 
+      social: 'https://soundcloud.com/thisisdukesilver?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing',
+      b2b: {
+        name: 'Just B',
+        image: 'https://res.cloudinary.com/dr0weongo/image/upload/v1769742815/justb_kuqmo6.jpg',
+        social: 'https://soundcloud.com/justbfunky'
+      }
+    },
     { name: 'DJ Sun Rose', image: 'https://res.cloudinary.com/dr0weongo/image/upload/v1768913732/rose_kao6xx.jpg', social: 'https://soundcloud.com/djsunrose' },
     { name: 'THUG CITY', image: 'https://res.cloudinary.com/dr0weongo/image/upload/v1768913732/thug_nyn5r0.jpg', social: 'https://soundcloud.com/j-spex-1?ref=clipboard&p=i&c=1&si=F5D69FEC18EC4C73B19687CB7026E786&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing' },
-    { name: 'Duke Silver', image: 'https://res.cloudinary.com/dr0weongo/image/upload/v1768913732/duke_ksxguf.jpg', social: 'https://soundcloud.com/thisisdukesilver?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing' },
     { name: 'Miss Jaedha', image: 'https://res.cloudinary.com/dr0weongo/image/upload/v1768913732/miss_icxbgj.jpg', social: 'https://soundcloud.com/missjaedha' },
-    { name: 'Bezz Bunny', image: 'https://res.cloudinary.com/dr0weongo/image/upload/v1769264466/bezzbunny_ltxluj.jpg', social: 'https://soundcloud.com/bezzbunny' },
     { name: 'TwoScoops', image: 'https://res.cloudinary.com/dr0weongo/image/upload/v1769303774/IMG-20260124-WA0000_oezqvk.jpg', social: 'https://soundcloud.com/dj-twoscoops' },
     { name: 'DJ Jimeni', image: 'https://res.cloudinary.com/dr0weongo/image/upload/v1769303738/IMG-20260124-WA0001_dcw7v4.jpg', social: 'https://soundcloud.com/jimeni' },
+    { name: 'Bezz Bunny', image: 'https://res.cloudinary.com/dr0weongo/image/upload/v1769264466/bezzbunny_ltxluj.jpg', social: 'https://soundcloud.com/bezzbunny' },
   ];
   return (
     <section id={SectionId.LINEUP} className="py-24 bg-gradient-to-b from-forest-950 to-forest-900 relative">
@@ -27,20 +37,56 @@ const Lineup: React.FC = () => {
         </div>
 
         {/* Artist Bubbles */}
-        <div className="flex flex-wrap justify-center gap-8 md:gap-16">
+        <div className="flex flex-wrap justify-center gap-8 md:gap-16 items-start">
           {artists.map((artist, index) => (
-            <a
-              key={index}
-              href={artist.social}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex flex-col items-center group max-w-[150px] text-center cursor-pointer"
-            >
-              <div className="w-20 h-20 md:w-28 md:h-28 rounded-full bg-forest-900 border border-white/5 flex items-center justify-center mb-4 transition-all duration-300 group-hover:bg-forest-800 group-hover:scale-105 overflow-hidden">
-                <img src={artist.image} alt={artist.name} className="w-full h-full object-cover rounded-full" />
-              </div>
-              <span className="text-xs uppercase tracking-[0.2em] text-gray-500 font-bold leading-tight">{artist.name}</span>
-            </a>
+            <React.Fragment key={index}>
+              {artist.b2b ? (
+                <div className="relative">
+                  <div className="absolute inset-0 bg-neon-green/5 border border-neon-green/20 rounded-full blur-sm"></div>
+                  <div className="relative flex items-center gap-2 md:gap-4 px-6 md:px-8 py-4">
+                    <a
+                      href={artist.social}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex flex-col items-center group max-w-[120px] md:max-w-[150px] text-center cursor-pointer"
+                    >
+                      <div className="w-16 h-16 md:w-28 md:h-28 rounded-full bg-forest-900 border border-white/5 flex items-center justify-center mb-2 md:mb-4 transition-all duration-300 group-hover:bg-forest-800 group-hover:scale-105 overflow-hidden">
+                        <img src={artist.image} alt={artist.name} className="w-full h-full object-cover rounded-full" />
+                      </div>
+                      <span className="text-[10px] md:text-xs uppercase tracking-[0.2em] text-gray-500 font-bold leading-tight">{artist.name}</span>
+                    </a>
+                    
+                    <div className="flex flex-col items-center justify-center">
+                      <span className="text-sm md:text-lg font-bold text-neon-green uppercase tracking-[0.3em]">b2b</span>
+                    </div>
+                    
+                    <a
+                      href={artist.b2b.social}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex flex-col items-center group max-w-[120px] md:max-w-[150px] text-center cursor-pointer"
+                    >
+                      <div className="w-16 h-16 md:w-28 md:h-28 rounded-full bg-forest-900 border border-white/5 flex items-center justify-center mb-2 md:mb-4 transition-all duration-300 group-hover:bg-forest-800 group-hover:scale-105 overflow-hidden">
+                        <img src={artist.b2b.image} alt={artist.b2b.name} className="w-full h-full object-cover rounded-full" />
+                      </div>
+                      <span className="text-[10px] md:text-xs uppercase tracking-[0.2em] text-gray-500 font-bold leading-tight">{artist.b2b.name}</span>
+                    </a>
+                  </div>
+                </div>
+              ) : (
+                <a
+                  href={artist.social}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex flex-col items-center group max-w-[120px] md:max-w-[150px] text-center cursor-pointer"
+                >
+                  <div className="w-16 h-16 md:w-28 md:h-28 rounded-full bg-forest-900 border border-white/5 flex items-center justify-center mb-2 md:mb-4 transition-all duration-300 group-hover:bg-forest-800 group-hover:scale-105 overflow-hidden">
+                    <img src={artist.image} alt={artist.name} className="w-full h-full object-cover rounded-full" />
+                  </div>
+                  <span className="text-[10px] md:text-xs uppercase tracking-[0.2em] text-gray-500 font-bold leading-tight">{artist.name}</span>
+                </a>
+              )}
+            </React.Fragment>
           ))}
         </div>
 
