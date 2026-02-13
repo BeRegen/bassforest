@@ -16,7 +16,6 @@ const Lineup: React.FC = () => {
     },
     { name: 'DJ Sun Rose', image: 'https://res.cloudinary.com/dr0weongo/image/upload/v1768913732/rose_kao6xx.jpg', social: 'https://soundcloud.com/djsunrose' },
     { name: 'THUG CITY', image: 'https://res.cloudinary.com/dr0weongo/image/upload/v1768913732/thug_nyn5r0.jpg', social: 'https://soundcloud.com/j-spex-1?ref=clipboard&p=i&c=1&si=F5D69FEC18EC4C73B19687CB7026E786&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing' },
-    { name: 'Miss Jaedha', image: 'https://res.cloudinary.com/dr0weongo/image/upload/v1768913732/miss_icxbgj.jpg', social: 'https://soundcloud.com/missjaedha' },
     { name: 'DJ Jimeni', image: 'https://res.cloudinary.com/dr0weongo/image/upload/v1769303738/IMG-20260124-WA0001_dcw7v4.jpg', social: 'https://soundcloud.com/jimeni' },
     { name: 'Bezz Bunny', image: 'https://res.cloudinary.com/dr0weongo/image/upload/v1769264466/bezzbunny_ltxluj.jpg', social: 'https://soundcloud.com/bezzbunny' },
   ];
