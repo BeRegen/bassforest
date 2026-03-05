@@ -17,7 +17,7 @@ const HowItWorks: React.FC = () => {
     {
       icon: <Globe2 className="w-12 h-12 text-emerald-400" />,
       title: 'Global Planting Day',
-      desc: 'On June 5, 2026, planting actions take place worldwide as part of a coordinated, decentralized effort.',
+      desc: 'On July 26, 2026, planting actions take place worldwide as part of a coordinated, decentralized effort.',
     },
   ];
 

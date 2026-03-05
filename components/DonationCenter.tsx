@@ -22,8 +22,8 @@ const DonationCenter: React.FC = () => {
             </p>
             <p>
               Bass Forest exists to amplify awareness and participation around a
-              globally coordinated tree planting action taking place on World
-              Environment Day, June 5, 2026.
+              globally coordinated tree planting action taking place on the
+              global tree planting day, July 26, 2026.
             </p>
             <p>
               The event mobilizes artists, listeners, sponsors and organizations
