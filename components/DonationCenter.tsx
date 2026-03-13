@@ -49,9 +49,7 @@ const DonationCenter: React.FC = () => {
             </h4>
 
             <div className="space-y-4 text-gray-400 text-sm leading-relaxed">
-              <p>100% of donations collected during Bass Forest are allocated to tree planting organizations.</p>
-              <p>Donations are processed through Monthly Earth Day, the organizing ecosystem behind the event.</p>
-              <p>Production, administration and artist compensation are not funded by donations — they are covered through sponsorships and grants.</p>
+              <p>100% of donations raised for Bass Forest are allocated to verified tree planting partners and organizations. Funds will go directly to the people on the ground doing the work. All trees planted will be verified and uploaded to the Silvi and or Treegens database for tracking and easy accessibility to the public.</p>
             </div>
           </div>
 

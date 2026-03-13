@@ -72,6 +72,13 @@ const HowItWorks: React.FC = () => {
             </div>
           ))}
         </div>
+
+        {/* Broadcast Information */}
+        <div className="mt-16 text-center max-w-4xl mx-auto">
+          <p className="text-lg text-gray-300 leading-relaxed">
+            Bass Forest will be broadcasted live through Hubcast Media across X, YouTube Live, Bass Forest home page, and many more channels. This is a FREE event, so get ready to dance with friends from all around the world.
+          </p>
+        </div>
       </div>
     </section>
   );
