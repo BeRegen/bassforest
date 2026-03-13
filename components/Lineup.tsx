@@ -19,6 +19,8 @@ const Lineup: React.FC = () => {
     { name: 'DJ Jimeni', image: 'https://res.cloudinary.com/dr0weongo/image/upload/v1769303738/IMG-20260124-WA0001_dcw7v4.jpg', social: 'https://soundcloud.com/jimeni' },
     { name: 'Bezz Bunny', image: 'https://res.cloudinary.com/dr0weongo/image/upload/v1769264466/bezzbunny_ltxluj.jpg', social: 'https://soundcloud.com/bezzbunny' },
     { name: 'Aphorize', image: 'https://res.cloudinary.com/dr0weongo/image/upload/v1773359783/aphorize_zcpfkk.jpg', social: 'https://soundcloud.com/aphorize-music' },
+    { name: 'Hippy Mann', image: 'https://res.cloudinary.com/dr0weongo/image/upload/v1773360962/hippy_man_rhoril.jpg', social: 'https://soundcloud.com/hippy-mann-802095340' },
+    { name: 'XYLLA', image: 'https://res.cloudinary.com/dr0weongo/image/upload/v1773360962/xylla_dsnkgn.jpg', social: 'https://soundcloud.com/xyllamusic' },
   ];
   return (
     <section id={SectionId.LINEUP} className="py-24 bg-gradient-to-b from-forest-950 to-forest-900 relative">
