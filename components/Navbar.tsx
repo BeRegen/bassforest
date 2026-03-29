@@ -41,11 +41,17 @@ const Navbar: React.FC = () => {
           onClick={() => scrollTo(SectionId.HOME)}
           className="flex items-center gap-2 cursor-pointer group"
         >
-          <img 
-            src="https://res.cloudinary.com/dr0weongo/image/upload/v1774791755/copy_of_bflogo_qlxxz7_b7e750.jpg" 
-            alt="Bass Forest Logo" 
-            className="w-12 h-12 rounded-full object-cover group-hover:scale-110 transition-transform duration-300"
-          />
+          <div className="relative">
+            <img 
+              src="https://res.cloudinary.com/dr0weongo/image/upload/v1774791755/copy_of_bflogo_qlxxz7_b7e750.jpg" 
+              alt="Bass Forest Logo" 
+              className="w-12 h-12 rounded-full object-cover group-hover:scale-110 transition-transform duration-300"
+            />
+            <div className="absolute inset-0 bg-neon-green blur-md opacity-40 rounded-full"></div>
+          </div>
+          <span className="text-xl md:text-2xl font-display font-bold tracking-tighter text-white">
+            BASS<span className="text-forest-400">FOREST</span>
+          </span>
         </div>
 
         {/* Desktop Menu */}
