@@ -23,6 +23,7 @@ const Lineup: React.FC = () => {
     { name: 'XYLLA', image: 'https://res.cloudinary.com/dr0weongo/image/upload/v1773360962/xylla_dsnkgn.jpg', social: 'https://soundcloud.com/xyllamusic' },
     { name: 'Macefacekilla', image: 'https://res.cloudinary.com/dr0weongo/image/upload/v1774791375/macefacekilla_fmujqr.jpg', social: 'https://on.soundcloud.com/UWAHeLbq5mUFQ39eRv' },
     { name: 'Bassurgence', image: 'https://res.cloudinary.com/dr0weongo/image/upload/v1774791375/bassurgence_ifybaa.jpg', social: 'https://on.soundcloud.com/QUnM5UR3LmZShz6NFA' },
+    { name: 'Boogie Lights', image: 'https://res.cloudinary.com/dr0weongo/image/upload/q_auto/f_auto/v1775231505/boogie_prm2k3.jpg', social: 'https://on.soundcloud.com/1QV8EkOHkdpS3a1w8h' },
   ];
   return (
     <section id={SectionId.LINEUP} className="py-24 bg-gradient-to-b from-forest-950 to-forest-900 relative">
