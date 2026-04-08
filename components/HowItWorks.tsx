@@ -7,7 +7,7 @@ const HowItWorks: React.FC = () => {
     {
       icon: <MonitorPlay className="w-12 h-12 text-neon-blue" />,
       title: 'Watch & Participate',
-      desc: 'Join the global electronic music livestream and participate from anywhere in the world.',
+      desc: 'Join the global electronic music livestream on Earth Day (April 22) and participate from anywhere in there world.',
     },
     {
       icon: <Sprout className="w-12 h-12 text-neon-green" />,
@@ -76,7 +76,7 @@ const HowItWorks: React.FC = () => {
         {/* Broadcast Information */}
         <div className="mt-16 text-center max-w-4xl mx-auto">
           <p className="text-lg text-gray-300 leading-relaxed">
-            Bass Forest will be broadcasted live through Hubcast Media across X, YouTube Live, Bass Forest home page, and many more channels. This is a FREE event, so get ready to dance with friends from all around the world.
+            Bass Forest will be broadcasted live through Hubcast Media across X, YouTube Live, Bass Forest home page, and many more channels. This is a free event on Earth Day, so get ready to dance with friends from all around the world.
           </p>
         </div>
       </div>
