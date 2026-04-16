@@ -22,6 +22,20 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-black border-t border-white/10 pt-20 pb-8">
       <div className="container mx-auto px-6">
+        
+        {/* Monthly Earth Day Banner */}
+        <div className="text-center mb-24">
+          <a 
+            href="https://monthlyearthday.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block group"
+          >
+            <p className="text-xl md:text-2xl font-display font-bold text-neon-green uppercase tracking-[0.1em] transition-all duration-300 group-hover:scale-105">
+              Put Together By Monthly Earth Day
+            </p>
+          </a>
+        </div>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
 
           {/* Brand */}
