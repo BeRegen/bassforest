@@ -12,7 +12,7 @@ const HowItWorks: React.FC = () => {
     {
       icon: <Sprout className="w-12 h-12 text-neon-green" />,
       title: 'Donate to Plant',
-      desc: 'Donations collected during the event are routed through the Monthly Earth Day infrastructure and allocated to aligned reforestation organizations.',
+      desc: 'Donations collected during the event are routed through the <a href="https://monthlyearthday.org/" target="_blank" rel="noopener noreferrer" className="text-neon-green hover:text-emerald-400 transition-colors">Monthly Earth Day</a> infrastructure and allocated to aligned reforestation organizations.',
     },
     {
       icon: <Globe2 className="w-12 h-12 text-emerald-400" />,
