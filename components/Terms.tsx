@@ -10,7 +10,7 @@ Terms of Use
 By accessing or using the Bass Forest website, you agree to the following terms.
 
 Purpose of the Website  
-The Bass Forest website provides information about a virtual electronic music event supporting global tree planting efforts aligned with World Environment Day and the Monthly Earth Day ecosystem.
+The Bass Forest website provides information about a virtual electronic music event supporting global tree planting efforts aligned with World Environment Day and the <a href="https://monthlyearthday.org/" target="_blank" rel="noopener noreferrer" className="text-neon-green hover:text-emerald-400 transition-colors">Monthly Earth Day</a> ecosystem.
 
 No Guarantees  
 Content on this website is provided for informational purposes only. While Bass Forest aims to act transparently and responsibly, participation, event details, artists, partners, and outcomes may evolve.

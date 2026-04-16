@@ -47,7 +47,7 @@ const Footer: React.FC = () => {
               </span>
             </div>
             <p className="text-gray-500 max-w-sm mb-8 leading-relaxed">
-              Bass Forest is first edition of an annual virtual electronic music festival amplifying the global tree planting day, aligned with Monthly Earth Day ecosystem.
+              Bass Forest is first edition of an annual virtual electronic music festival amplifying the global tree planting day, aligned with <a href="https://monthlyearthday.org/" target="_blank" rel="noopener noreferrer" className="text-neon-green hover:text-emerald-400 transition-colors">Monthly Earth Day</a> ecosystem.
             </p>
 
             <div className="flex gap-4">
