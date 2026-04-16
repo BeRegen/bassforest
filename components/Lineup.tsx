@@ -24,6 +24,7 @@ const Lineup: React.FC = () => {
     { name: 'Macefacekilla', image: 'https://res.cloudinary.com/dr0weongo/image/upload/v1774791375/macefacekilla_fmujqr.jpg', social: 'https://on.soundcloud.com/UWAHeLbq5mUFQ39eRv' },
     { name: 'Bassurgence', image: 'https://res.cloudinary.com/dr0weongo/image/upload/v1774791375/bassurgence_ifybaa.jpg', social: 'https://on.soundcloud.com/QUnM5UR3LmZShz6NFA' },
     { name: 'Boogie Lights', image: 'https://res.cloudinary.com/dr0weongo/image/upload/q_auto/f_auto/v1775231505/boogie_prm2k3.jpg', social: 'https://on.soundcloud.com/1QV8EkOHkdpS3a1w8h' },
+    { name: 'Ali Omshuara', image: 'https://res.cloudinary.com/dr0weongo/image/upload/q_auto/f_auto/v1776344621/aliom_jvdlld.png', social: 'https://soundcloud.com/aliomshuara' },
   ];
   return (
     <section id={SectionId.LINEUP} className="py-24 bg-gradient-to-b from-forest-950 to-forest-900 relative">
@@ -55,7 +56,7 @@ const Lineup: React.FC = () => {
                       className="flex flex-col items-center group max-w-[120px] md:max-w-[150px] text-center cursor-pointer"
                     >
                       <div className="w-16 h-16 md:w-28 md:h-28 rounded-full bg-forest-900 border border-white/5 flex items-center justify-center mb-2 md:mb-4 transition-all duration-300 group-hover:bg-forest-800 group-hover:scale-105 overflow-hidden">
-                        <img src={artist.image} alt={artist.name} className="w-full h-full object-cover rounded-full" />
+                        <img src={artist.image} alt={artist.name} className="w-full h-full object-cover rounded-full scale-125" />
                       </div>
                       <span className="text-[10px] md:text-xs uppercase tracking-[0.2em] text-gray-500 font-bold leading-tight">{artist.name}</span>
                     </a>
@@ -71,7 +72,7 @@ const Lineup: React.FC = () => {
                       className="flex flex-col items-center group max-w-[120px] md:max-w-[150px] text-center cursor-pointer"
                     >
                       <div className="w-16 h-16 md:w-28 md:h-28 rounded-full bg-forest-900 border border-white/5 flex items-center justify-center mb-2 md:mb-4 transition-all duration-300 group-hover:bg-forest-800 group-hover:scale-105 overflow-hidden">
-                        <img src={artist.b2b.image} alt={artist.b2b.name} className="w-full h-full object-cover rounded-full" />
+                        <img src={artist.b2b.image} alt={artist.b2b.name} className="w-full h-full object-cover rounded-full scale-125" />
                       </div>
                       <span className="text-[10px] md:text-xs uppercase tracking-[0.2em] text-gray-500 font-bold leading-tight">{artist.b2b.name}</span>
                     </a>
@@ -85,7 +86,7 @@ const Lineup: React.FC = () => {
                   className="flex flex-col items-center group max-w-[120px] md:max-w-[150px] text-center cursor-pointer"
                 >
                   <div className="w-16 h-16 md:w-28 md:h-28 rounded-full bg-forest-900 border border-white/5 flex items-center justify-center mb-2 md:mb-4 transition-all duration-300 group-hover:bg-forest-800 group-hover:scale-105 overflow-hidden">
-                    <img src={artist.image} alt={artist.name} className="w-full h-full object-cover rounded-full" />
+                    <img src={artist.image} alt={artist.name} className="w-full h-full object-cover rounded-full scale-125" />
                   </div>
                   <span className="text-[10px] md:text-xs uppercase tracking-[0.2em] text-gray-500 font-bold leading-tight">{artist.name}</span>
                 </a>
