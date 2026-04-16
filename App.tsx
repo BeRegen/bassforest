@@ -70,8 +70,8 @@ function App() {
       
       <Footer />
 
-      {/* Floating Bubble */}
-      <a
+      {/* Floating Bubble - COMMENTED FOR FUTURE USE */}
+      {/* <a
         href="https://monthlyearthday.org/"
         target="_blank"
         rel="noopener noreferrer"
@@ -86,7 +86,7 @@ function App() {
             />
           </div>
         </div>
-      </a>
+      </a> */}
 
       {/* Legal Content Overlays */}
       {activeLegal && (
