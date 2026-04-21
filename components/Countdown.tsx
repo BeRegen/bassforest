@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const EVENT_DATE = new Date('2026-04-22T00:00:00Z').getTime();
+const EVENT_DATE = new Date('2026-04-22T16:00:00Z').getTime();
 const STARTING_SOON_THRESHOLD = 5 * 60 * 1000; // 5 minutos
 
 const Countdown: React.FC = () => {
