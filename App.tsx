@@ -8,6 +8,7 @@ import Sponsors from './components/Sponsors';
 import FAQ from './components/FAQ';
 import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
+import LiveStream from './components/LiveStream';
 import ScrollReveal from './components/ScrollReveal';
 import Privacy from './components/Privacy';
 import Terms from './components/Terms';
@@ -43,6 +44,8 @@ function App() {
       
       {/* Hero handles its own entrance animations */}
       <Hero />
+      
+      <LiveStream />
       
       <ScrollReveal>
         <HowItWorks />

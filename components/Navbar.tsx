@@ -25,6 +25,7 @@ const Navbar: React.FC = () => {
   const navLinks = [
     { label: 'How It Works', id: SectionId.HOW_IT_WORKS },
     { label: 'Lineup', id: SectionId.LINEUP },
+    { label: 'Partners', id: SectionId.PARTNERS },
     { label: 'FAQ', id: SectionId.FAQ },
     { label: 'Contact', id: SectionId.CONTACT },
   ];
@@ -81,26 +82,26 @@ const Navbar: React.FC = () => {
         </div>
       </div>
 
-      {/* Mobile Dropdown */}
-      {isOpen && (
-        <div className="md:hidden absolute top-full left-0 w-full bg-forest-950/95 backdrop-blur-xl border-t border-white/10 p-6 flex flex-col gap-4 shadow-2xl">
-          {navLinks.map((link) => (
-            <button
-              key={link.id}
-              onClick={() => scrollTo(link.id)}
-              className="text-left text-lg font-semibold text-white py-2 border-b border-white/5"
+        {/* Mobile Dropdown */}
+        {isOpen && (
+          <div className="md:hidden absolute top-full left-0 w-full bg-forest-950/95 backdrop-blur-xl border-t border-white/10 p-6 flex flex-col gap-4 shadow-2xl">
+            {navLinks.map((link) => (
+              <button
+                key={link.id}
+                onClick={() => scrollTo(link.id)}
+                className="text-left text-lg font-semibold text-white py-2 border-b border-white/5"
+              >
+                {link.label}
+              </button>
+            ))}
+            <button 
+              onClick={() => scrollTo(SectionId.DONATE)}
+              className="bg-neon-green text-forest-950 w-full py-3 rounded-lg font-bold mt-2"
             >
-              {link.label}
+              DONATE
             </button>
-          ))}
-          <button 
-            onClick={() => scrollTo(SectionId.DONATE)}
-            className="bg-neon-green text-forest-950 w-full py-3 rounded-lg font-bold mt-2"
-          >
-            JOIN THE FOREST
-          </button>
-        </div>
-      )}
+          </div>
+        )}
     </nav>
   );
 };

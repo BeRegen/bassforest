@@ -64,14 +64,21 @@ const Countdown: React.FC = () => {
 
   /* ================= LIVE ================= */
   if (isLive) {
+    const scrollToLiveStream = () => {
+      const liveStreamSection = document.getElementById('live-stream-section');
+      if (liveStreamSection) {
+        liveStreamSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    };
+
     return (
       <div className="relative z-20 isolate mt-12 flex flex-col items-center text-center animate-in fade-in zoom-in duration-700">
         <span className="text-neon-green font-display font-black text-4xl md:text-6xl tracking-widest mb-8">
           LIVE NOW
         </span>
 
-        <a
-          href="#join-event"
+        <button
+          onClick={scrollToLiveStream}
           className="
             bg-neon-green
             text-forest-950
@@ -83,10 +90,11 @@ const Countdown: React.FC = () => {
             shadow-[0_0_35px_rgba(57,255,20,0.55)]
             animate-pulse
             hover:bg-emerald-400
+            cursor-pointer
           "
         >
           JOIN EVENT
-        </a>
+        </button>
 
         <p className="mt-4 text-sm text-gray-400">
           The Bass Forest livestream is happening now
